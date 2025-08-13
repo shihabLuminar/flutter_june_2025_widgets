@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/card_sample_screen.dart';
 import 'package:flutter_application_1/circleavatar_sample.dart';
+import 'package:flutter_application_1/column_screen.dart';
 import 'package:flutter_application_1/container_sample_screen.dart';
+import 'package:flutter_application_1/row_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -26,59 +28,47 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           spacing: 15,
           children: [
-            TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => ContainerSampleScreen(),
-                  ),
-                );
-              },
-              child: Text(
-                "Container",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                ),
-              ),
+            _customTextButton(
+              context,
+              title: "Container",
+              screen: ContainerSampleScreen(),
             ),
-
-            TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => CardSampleScreen()),
-                );
-              },
-              child: Text(
-                "Card",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                ),
-              ),
+            _customTextButton(
+              context,
+              title: "Card",
+              screen: CardSampleScreen(),
             ),
-
-            TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => CircleavatarSample()),
-                );
-              },
-              child: Text(
-                "Circle Avatar",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                ),
-              ),
+            _customTextButton(
+              context,
+              title: "Circle avatar",
+              screen: CircleavatarSample(),
             ),
+            _customTextButton(context, title: "Column", screen: ColumnScreen()),
+            _customTextButton(context, title: "Row", screen: RowScreen()),
           ],
+        ),
+      ),
+    );
+  }
+
+  TextButton _customTextButton(
+    BuildContext context, {
+    required String title,
+    required Widget screen,
+  }) {
+    return TextButton(
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => screen),
+        );
+      },
+      child: Text(
+        title,
+        style: TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.bold,
+          fontSize: 20,
         ),
       ),
     );
