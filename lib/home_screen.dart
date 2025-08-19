@@ -5,6 +5,8 @@ import 'package:flutter_application_1/column_screen.dart';
 import 'package:flutter_application_1/container_sample_screen.dart';
 import 'package:flutter_application_1/row_screen.dart';
 import 'package:flutter_application_1/sample_ui_1.dart';
+import 'package:flutter_application_1/sample_ui_2.dart';
+import 'package:flutter_application_1/stack_sample_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -50,6 +52,16 @@ class HomeScreen extends StatelessWidget {
               context,
               title: "Sample Ui 1",
               screen: SampleUi1(),
+            ),
+            _customTextButton(
+              context,
+              title: "stack",
+              screen: StackSampleScreen(),
+            ),
+            _customTextButton(
+              context,
+              title: "Sample Ui 2",
+              screen: SampleUi2(),
             ),
           ],
         ),

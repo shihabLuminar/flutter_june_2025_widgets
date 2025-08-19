@@ -25,14 +25,12 @@ class SampleUi1 extends StatelessWidget {
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       CircleAvatar(
                         backgroundColor: Color(0x50000000),
-
                         child: Icon(
                           Icons.arrow_back_ios_new,
                           size: 20,
