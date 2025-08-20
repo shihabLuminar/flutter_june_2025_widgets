@@ -3,6 +3,8 @@ import 'package:flutter_application_1/card_sample_screen.dart';
 import 'package:flutter_application_1/circleavatar_sample.dart';
 import 'package:flutter_application_1/column_screen.dart';
 import 'package:flutter_application_1/container_sample_screen.dart';
+import 'package:flutter_application_1/images_sample_screen.dart';
+import 'package:flutter_application_1/listview_screen.dart';
 import 'package:flutter_application_1/row_screen.dart';
 import 'package:flutter_application_1/sample_ui_1.dart';
 import 'package:flutter_application_1/sample_ui_2.dart';
@@ -62,6 +64,16 @@ class HomeScreen extends StatelessWidget {
               context,
               title: "Sample Ui 2",
               screen: SampleUi2(),
+            ),
+            _customTextButton(
+              context,
+              title: "Images sample",
+              screen: ImagesSampleScreen(),
+            ),
+            _customTextButton(
+              context,
+              title: "List view",
+              screen: ListviewScreen(),
             ),
           ],
         ),

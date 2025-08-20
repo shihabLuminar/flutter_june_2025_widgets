@@ -11,7 +11,7 @@ class ColumnScreen extends StatelessWidget {
           child: Column(
             // mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -28,6 +28,12 @@ class ColumnScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(color: Colors.red, width: 100, height: 200),
+              ),
+              ListTile(
+                leading: Icon(Icons.favorite_outline),
+                title: Text("title"),
+                subtitle: Text("subtitle"),
+                trailing: Icon(Icons.delete),
               ),
             ],
           ),

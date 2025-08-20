@@ -157,12 +157,16 @@ class SampleUi2 extends StatelessWidget {
                       ],
                     ),
                     Positioned(
-                      bottom: 50,
+                      top: 220,
                       right: 50,
                       child: CircleAvatar(
                         radius: 30,
-                        backgroundColor: Colors.red,
-                        child: Icon(Icons.favorite, color: Colors.white),
+                        backgroundColor: Color(0xffff0163),
+                        child: Icon(
+                          Icons.favorite,
+                          color: Colors.white,
+                          size: 30,
+                        ),
                       ),
                     ),
                   ],
