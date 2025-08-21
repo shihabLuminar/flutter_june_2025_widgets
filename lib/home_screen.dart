@@ -3,8 +3,10 @@ import 'package:flutter_application_1/card_sample_screen.dart';
 import 'package:flutter_application_1/circleavatar_sample.dart';
 import 'package:flutter_application_1/column_screen.dart';
 import 'package:flutter_application_1/container_sample_screen.dart';
+import 'package:flutter_application_1/grid_view_screen.dart';
 import 'package:flutter_application_1/images_sample_screen.dart';
 import 'package:flutter_application_1/listview_screen.dart';
+import 'package:flutter_application_1/pageview_screen.dart';
 import 'package:flutter_application_1/row_screen.dart';
 import 'package:flutter_application_1/sample_ui_1.dart';
 import 'package:flutter_application_1/sample_ui_2.dart';
@@ -30,52 +32,68 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: Column(
-          spacing: 15,
-          children: [
-            _customTextButton(
-              context,
-              title: "Container",
-              screen: ContainerSampleScreen(),
-            ),
-            _customTextButton(
-              context,
-              title: "Card",
-              screen: CardSampleScreen(),
-            ),
-            _customTextButton(
-              context,
-              title: "Circle avatar",
-              screen: CircleavatarSample(),
-            ),
-            _customTextButton(context, title: "Column", screen: ColumnScreen()),
-            _customTextButton(context, title: "Row", screen: RowScreen()),
-            _customTextButton(
-              context,
-              title: "Sample Ui 1",
-              screen: SampleUi1(),
-            ),
-            _customTextButton(
-              context,
-              title: "stack",
-              screen: StackSampleScreen(),
-            ),
-            _customTextButton(
-              context,
-              title: "Sample Ui 2",
-              screen: SampleUi2(),
-            ),
-            _customTextButton(
-              context,
-              title: "Images sample",
-              screen: ImagesSampleScreen(),
-            ),
-            _customTextButton(
-              context,
-              title: "List view",
-              screen: ListviewScreen(),
-            ),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            spacing: 15,
+            children: [
+              _customTextButton(
+                context,
+                title: "Container",
+                screen: ContainerSampleScreen(),
+              ),
+              _customTextButton(
+                context,
+                title: "Card",
+                screen: CardSampleScreen(),
+              ),
+              _customTextButton(
+                context,
+                title: "Circle avatar",
+                screen: CircleavatarSample(),
+              ),
+              _customTextButton(
+                context,
+                title: "Column",
+                screen: ColumnScreen(),
+              ),
+              _customTextButton(context, title: "Row", screen: RowScreen()),
+              _customTextButton(
+                context,
+                title: "Sample Ui 1",
+                screen: SampleUi1(),
+              ),
+              _customTextButton(
+                context,
+                title: "stack",
+                screen: StackSampleScreen(),
+              ),
+              _customTextButton(
+                context,
+                title: "Sample Ui 2",
+                screen: SampleUi2(),
+              ),
+              _customTextButton(
+                context,
+                title: "Images sample",
+                screen: ImagesSampleScreen(),
+              ),
+              _customTextButton(
+                context,
+                title: "List view",
+                screen: ListviewScreen(),
+              ),
+              _customTextButton(
+                context,
+                title: "Grid view",
+                screen: GridViewScreen(),
+              ),
+              _customTextButton(
+                context,
+                title: "page view",
+                screen: PageviewScreen(),
+              ),
+            ],
+          ),
         ),
       ),
     );
