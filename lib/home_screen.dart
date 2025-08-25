@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/buttons_sample.dart';
 import 'package:flutter_application_1/card_sample_screen.dart';
 import 'package:flutter_application_1/circleavatar_sample.dart';
 import 'package:flutter_application_1/column_screen.dart';
 import 'package:flutter_application_1/container_sample_screen.dart';
+import 'package:flutter_application_1/expanded_and_flexible.dart';
 import 'package:flutter_application_1/grid_view_screen.dart';
 import 'package:flutter_application_1/images_sample_screen.dart';
 import 'package:flutter_application_1/listview_screen.dart';
@@ -91,6 +93,16 @@ class HomeScreen extends StatelessWidget {
                 context,
                 title: "page view",
                 screen: PageviewScreen(),
+              ),
+              _customTextButton(
+                context,
+                title: "Expanded and Flexible",
+                screen: ExpandedAndFlexible(),
+              ),
+              _customTextButton(
+                context,
+                title: "Buttons",
+                screen: ButtonsSample(),
               ),
             ],
           ),
