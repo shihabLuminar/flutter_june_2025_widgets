@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/buttons_sample.dart';
 import 'package:flutter_application_1/card_sample_screen.dart';
 import 'package:flutter_application_1/circleavatar_sample.dart';
+import 'package:flutter_application_1/color_screen.dart';
 import 'package:flutter_application_1/column_screen.dart';
 import 'package:flutter_application_1/container_sample_screen.dart';
+import 'package:flutter_application_1/counter_screen.dart';
 import 'package:flutter_application_1/expanded_and_flexible.dart';
 import 'package:flutter_application_1/grid_view_screen.dart';
 import 'package:flutter_application_1/images_sample_screen.dart';
 import 'package:flutter_application_1/listview_screen.dart';
+import 'package:flutter_application_1/navigations_sample.dart';
 import 'package:flutter_application_1/pageview_screen.dart';
 import 'package:flutter_application_1/row_screen.dart';
 import 'package:flutter_application_1/sample_ui_1.dart';
@@ -103,6 +106,21 @@ class HomeScreen extends StatelessWidget {
                 context,
                 title: "Buttons",
                 screen: ButtonsSample(),
+              ),
+              _customTextButton(
+                context,
+                title: "Navigations",
+                screen: NavigationsSample(),
+              ),
+              _customTextButton(
+                context,
+                title: "Counter Screen",
+                screen: CounterScreen(),
+              ),
+              _customTextButton(
+                context,
+                title: "Color Screen",
+                screen: ColorScreen(),
               ),
             ],
           ),
