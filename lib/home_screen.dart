@@ -16,6 +16,7 @@ import 'package:flutter_application_1/row_screen.dart';
 import 'package:flutter_application_1/sample_ui_1.dart';
 import 'package:flutter_application_1/sample_ui_2.dart';
 import 'package:flutter_application_1/stack_sample_screen.dart';
+import 'package:flutter_application_1/stful_buttons_samples.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -121,6 +122,11 @@ class HomeScreen extends StatelessWidget {
                 context,
                 title: "Color Screen",
                 screen: ColorScreen(),
+              ),
+              _customTextButton(
+                context,
+                title: "Statefull buttons",
+                screen: StfulButtonsSamples(),
               ),
             ],
           ),
