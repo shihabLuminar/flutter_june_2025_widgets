@@ -10,6 +10,7 @@ import 'package:flutter_application_1/expanded_and_flexible.dart';
 import 'package:flutter_application_1/grid_view_screen.dart';
 import 'package:flutter_application_1/images_sample_screen.dart';
 import 'package:flutter_application_1/listview_screen.dart';
+import 'package:flutter_application_1/mediaquery_sample.dart';
 import 'package:flutter_application_1/navigations_sample.dart';
 import 'package:flutter_application_1/pageview_screen.dart';
 import 'package:flutter_application_1/row_screen.dart';
@@ -17,6 +18,7 @@ import 'package:flutter_application_1/sample_ui_1.dart';
 import 'package:flutter_application_1/sample_ui_2.dart';
 import 'package:flutter_application_1/stack_sample_screen.dart';
 import 'package:flutter_application_1/stful_buttons_samples.dart';
+import 'package:flutter_application_1/tabbar_sample.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -127,6 +129,16 @@ class HomeScreen extends StatelessWidget {
                 context,
                 title: "Statefull buttons",
                 screen: StfulButtonsSamples(),
+              ),
+              _customTextButton(
+                context,
+                title: "Tab bar",
+                screen: TabbarSample(),
+              ),
+              _customTextButton(
+                context,
+                title: "mediaquery",
+                screen: MediaquerySample(),
               ),
             ],
           ),

@@ -8,7 +8,6 @@ class PageviewScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Page view")),
       body: PageView.builder(
-        scrollDirection: Axis.vertical,
         itemCount: 10,
         itemBuilder: (context, index) => Container(
           margin: EdgeInsets.all(10),

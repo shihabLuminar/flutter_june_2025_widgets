@@ -9,6 +9,7 @@ class StfulButtonsSamples extends StatefulWidget {
 
 class _StfulButtonsSamplesState extends State<StfulButtonsSamples> {
   List<String> genders = ["male", "female", "others", "others2"];
+  List<String> popupmenus = ["one", "two", "threee", "four", "five", "six"];
 
   bool isChecked = true;
   bool isOn = true;
@@ -52,11 +53,8 @@ class _StfulButtonsSamplesState extends State<StfulButtonsSamples> {
           ),
 
           PopupMenuButton(
-            itemBuilder: (context) => [
-              PopupMenuItem(child: Text("item 1"), onTap: () {}),
-              PopupMenuItem(child: Text("item 1")),
-              PopupMenuItem(child: Text("item 1")),
-            ],
+            itemBuilder: (context) =>
+                popupmenus.map((e) => PopupMenuItem(child: Text(e))).toList(),
           ),
 
           DropdownButton(
