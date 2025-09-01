@@ -3,7 +3,6 @@ import 'package:flutter_application_1/card_sample_screen.dart';
 import 'package:flutter_application_1/column_screen.dart';
 import 'package:flutter_application_1/container_sample_screen.dart';
 import 'package:flutter_application_1/pageview_screen.dart';
-import 'package:flutter_application_1/row_screen.dart';
 
 class TabbarSample extends StatelessWidget {
   const TabbarSample({super.key});

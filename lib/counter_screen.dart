@@ -11,6 +11,7 @@ class _CounterScreenState extends State<CounterScreen> {
   int count = 0; // state variable
   @override
   Widget build(BuildContext context) {
+    print("re building .................");
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {

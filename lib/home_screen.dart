@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/alerts_sample.dart';
+import 'package:flutter_application_1/bottom_nav_bar_screen.dart';
 import 'package:flutter_application_1/buttons_sample.dart';
 import 'package:flutter_application_1/card_sample_screen.dart';
 import 'package:flutter_application_1/circleavatar_sample.dart';
@@ -139,6 +141,16 @@ class HomeScreen extends StatelessWidget {
                 context,
                 title: "mediaquery",
                 screen: MediaquerySample(),
+              ),
+              _customTextButton(
+                context,
+                title: "bottom navigation ",
+                screen: BottomNavBarScreen(),
+              ),
+              _customTextButton(
+                context,
+                title: "Alerts Sample ",
+                screen: AlertsSample(),
               ),
             ],
           ),
